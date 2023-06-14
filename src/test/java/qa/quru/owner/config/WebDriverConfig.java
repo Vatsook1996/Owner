@@ -6,7 +6,7 @@ import org.aeonbits.owner.Config;
         "classpath:${env}.properties"
 })
 
-public class WebDriverConfig extends Config{
+public interface WebDriverConfig extends Config {
 
     @Key("browserName")
     @DefaultValue("CHROME")
